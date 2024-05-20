@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,6 +25,7 @@ export default function RootLayout({
         </div>
         {children}
         <Footer/>
+        <Script src="https://smtpjs.com/v3/smtp.js" strategy="beforeInteractive" />
         </body>
         
         
